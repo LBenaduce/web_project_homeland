@@ -257,3 +257,5 @@ a:hover { opacity: .8; }
   .lead__subtitle { font-size: 14px; }
   .cover { min-height: 45vh; }
 }
+
+@import url("../vendor/normalize.css");
