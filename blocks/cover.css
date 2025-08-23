@@ -1,0 +1,27 @@
+.cover{position:relative;margin-block:clamp(24px,6vw,56px)}
+.cover__image{
+  width:100%;
+  height:clamp(180px,40vw,420px);
+  object-fit:cover;
+  border-radius:12px;
+}
+.cover__overlay{
+  position:absolute;inset:0;
+  border-radius:12px;
+  background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.55));
+}
+.cover__content{
+  position:absolute;inset:0;
+  display:grid;place-items:center;
+  text-align:center;color:#fff;
+  padding:clamp(12px,4vw,32px);
+}
+.cover__title{font-size:clamp(22px,5vw,40px);margin-bottom:8px}
+.cover__subtitle{font-size:clamp(14px,2.6vw,18px);margin-bottom:14px}
+.cover__button{
+  display:inline-block;
+  text-decoration:none;
+  background:#fff;color:#111;
+  padding:10px 16px;border-radius:999px;
+  font-weight:600;
+}

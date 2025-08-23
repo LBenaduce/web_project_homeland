@@ -1,0 +1,11 @@
+.header{}
+.header__container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-block:clamp(10px,2.2vw,16px);
+}
+.header__logo{
+  width:clamp(96px,14vw,160px);
+  height:auto;
+}

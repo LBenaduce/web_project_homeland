@@ -1,0 +1,7 @@
+.photo-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:clamp(8px,2vw,16px);
+  margin-block:clamp(16px,4vw,32px);
+}
+.photo-grid img{border-radius:8px}

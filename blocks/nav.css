@@ -1,0 +1,14 @@
+.nav{
+  display:flex;
+  gap:12px;
+}
+.nav__link{
+  color:var(--tx-1);
+  text-decoration:none;
+  padding:6px 8px;
+  border-radius:8px;
+  transition:opacity .2s ease, color .2s ease, background .2s ease;
+  opacity:.85;
+}
+.nav__link:hover{opacity:1;color:var(--tx-0);background:rgba(255,255,255,.06)}
+.nav__link_active{opacity:1;color:var(--tx-0);background:rgba(255,255,255,.12)}
