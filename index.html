@@ -19,19 +19,16 @@
     </header>
 
     <main class="content">
-      <section class="lead">
+      <section class="lead" aria-label="Introdução">
         <h1 class="lead__title">De Pátria para Pátria</h1>
-        <p class="lead__subtitle">
-          Uma jornada épica do Kentucky ao Burundi pelo País de Gales e Ucrânia
-        </p>
+        <p class="lead__subtitle">Uma jornada épica do Kentucky ao Burundi pelo País de Gales e Ucrânia</p>
         <img
           src="images/image.png"
-          alt="Imagem em preto e branco de uma vila costeira com colina ao fundo e céu nublado"
-          class="lead__image"
-        >
+          alt="Vila costeira em preto e branco com colina ao fundo e céu nublado"
+          class="lead__image">
       </section>
 
-      <section class="intro">
+      <section class="intro" aria-label="Sobre o projeto">
         <h2 class="intro__title">Conheça um pouco mais sobre a localização dos seus amigos</h2>
         <p class="intro__quote">
           Cada pessoa é um artista livre, chamado a transformar as condições,
@@ -48,6 +45,67 @@
           visual dedicada à sua cidade natal à nossa coleção. Não importa de onde você é,
           estamos felizes por você ser nosso vizinho.
         </p>
+      </section>
+
+      <!-- PHOTO-GRID -->
+      <section class="photo-grid" aria-label="Galeria de fotos">
+        <ul class="photo-grid__list">
+          <li class="photo-grid__item">
+            <img class="photo-grid__image" src="images/grid-01.jpg" alt="Panorama urbano ao entardecer">
+          </li>
+          <li class="photo-grid__item">
+            <img class="photo-grid__image" src="images/grid-02.jpg" alt="Praça com crianças brincando">
+          </li>
+          <li class="photo-grid__item">
+            <img class="photo-grid__image" src="images/grid-03.jpg" alt="Mercado local com frutas">
+          </li>
+          <li class="photo-grid__item">
+            <img class="photo-grid__image" src="images/grid-04.jpg" alt="Arquitetura tradicional">
+          </li>
+          <li class="photo-grid__item">
+            <img class="photo-grid__image" src="images/grid-05.jpg" alt="Rua arborizada">
+          </li>
+          <li class="photo-grid__item">
+            <img class="photo-grid__image" src="images/grid-06.jpg" alt="Costa com falésias">
+          </li>
+          <li class="photo-grid__item">
+            <img class="photo-grid__image" src="images/grid-07.jpg" alt="Estação de trem antiga">
+          </li>
+          <li class="photo-grid__item">
+            <img class="photo-grid__image" src="images/grid-08.jpg" alt="Lago ao amanhecer">
+          </li>
+        </ul>
+      </section>
+
+      <!-- PLACES -->
+      <section class="places" aria-label="Cidades e histórias">
+        <article class="place">
+          <h3 class="place__title">Santa Maria</h3>
+
+          <div class="place__meta">
+            <p class="place__artist">por Luiz Benaduce</p>
+            <a class="place__nft button button_theme_grad"
+               href="https://pt.wikipedia.org/wiki/Token_n%C3%A3o_fung%C3%ADvel"
+               target="_blank" rel="noopener noreferrer">
+              Compre esta obra de arte como NFT
+            </a>
+          </div>
+
+          <img class="place__image" src="images/place-santamaria.jpg" alt="Centro de Santa Maria ao amanhecer">
+
+          <div class="place__text">
+            <p class="place__paragraph">
+              Localizada no coração do Rio Grande do Sul, Santa Maria é um ponto de encontro
+              entre tradição e inovação. As ruas arborizadas e a vida universitária criam uma
+              atmosfera acolhedora.
+            </p>
+            <p class="place__paragraph">
+              Foi aqui que descobri minha paixão por tecnologia e design. Entre cafés e bibliotecas,
+              transformei memórias em linhas de código e imagens.
+            </p>
+          </div>
+        </article>
+        <!-- Duplique <article class="place"> para outras cidades do layout -->
       </section>
     </main>
 
