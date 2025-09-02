@@ -1,11 +1,11 @@
 .header__logo {
-  display: flex;
-  justify-content: center;
+  display: block;
   margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 16px;
+  width: clamp(160px, 40vw, 280px);
+  height: auto;
 }
+
+
 
 .header__logo-image {
   max-width: 254px;
