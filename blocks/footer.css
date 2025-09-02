@@ -1,26 +1,28 @@
 .footer {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  padding-top: 92px;
-  padding-bottom: 20px;
+  margin-block: 90px 24px;
 }
 
 .footer__copyright {
-  /*width: 166px;*/
-  height: 16px;
-  white-space: nowrap;
-  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
 }
 
-@media screen and (max-width: 1024px) {
+.footer__copyright-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__copyright-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 426px) {
   .footer {
-    padding-top: 88px;
+    margin-block: 64px 24px;
   }
-}
-
-@media screen and (max-width: 544px) {
-  .footer {
-    padding-top: 64px;
+  .footer__copyright {
+    line-height: 1;
   }
 }

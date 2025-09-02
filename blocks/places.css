@@ -1,96 +1,23 @@
 .places {
-  max-width: 984px;
-  margin: 0 auto 92px;
-  padding: 0 16px;
-  display: grid;
-  gap: 80px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
 }
 
-.place {
-  display: grid;
-  gap: 24px;
-}
-
-.place__title {
-  margin: 0;
-  font-weight: 700;
-  line-height: 1.15;
-  font-size: clamp(28px, 3.2vw, 54px);
-  font-family: "Noto Serif", serif;
-}
-
-.place__artists {
-  display: grid;
-  gap: 8px;
-}
-
-.place__artists-title {
-  margin: 0;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  color: #838383;
-}
-
-.place__artists-item {
-  margin: 0;
-  font-size: 16px;
-}
-
-.place__image {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-  object-fit: cover;
-}
-
-.place__description {
-  display: grid;
-  gap: 16px;
-}
-
-.place__paragraph {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #e5e5e5;
-}
-
-.place__link {
-  display: inline-block;
-  align-self: start;
-  padding: 12px 18px;
-  border-radius: 8px;
-  background: #2F80ED;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.place__link:hover {
-  filter: brightness(1.05);
-}
-
-@media (min-width: 1024px) {
-  .place {
-    grid-template-columns: 460px 1fr;
-    column-gap: 40px;
-    row-gap: 0;
-    align-items: start;
+@media screen and (max-width: 1024px) {
+  .places {
+    padding-inline: 24px;
   }
-  .place__title,
-  .place__artists,
-  .place__link {
-    grid-column: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    row-gap: 72px;
   }
-  .place__image,
-  .place__description {
-    grid-column: 2;
+}
+
+@media screen and (max-width: 480px) {
+  .places {
+    padding-inline: 16px;
   }
-  .place__title { grid-row: 1; }
-  .place__artists { grid-row: 2; margin-top: 8px; }
-  .place__image { grid-row: 1 / span 2; margin-bottom: 16px; }
-  .place__description { grid-row: 3; margin-top: 8px; }
-  .place__link { grid-row: 3; margin-top: 16px; }
 }
